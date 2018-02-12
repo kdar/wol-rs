@@ -6,7 +6,7 @@ Send a Wake-on-lan magic packet.
 ## Usage
 
 ```
-extern create wol;
+extern crate wol;
 
 wol::send(
   vec![0x01, 0x20, 0x44, 0x40, 0xf2, 0xff], // The MAC address you're targeting
